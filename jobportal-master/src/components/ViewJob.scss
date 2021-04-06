@@ -1,0 +1,296 @@
+@import '../../node_modules/breakpoint-sass/stylesheets/breakpoint';
+
+.view-wrapper {
+    padding-top: 4rem;
+    background-color: #F5F6F8;
+}
+
+.view-wrapper-dark {
+    padding-top: 4rem;
+    background-color: #131822;
+}
+
+.header-wrapper{
+    background-color: #5865E0;
+    border-bottom-left-radius: 7rem;
+}
+
+.devjobs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 1.875rem;
+    overflow: hidden;
+}
+
+.text {
+    color: white;
+    font-size: .1.125rem;
+}
+
+.light-text {
+    color: black;
+}
+
+.dark-text {
+    color: #FFFFFF !important;
+}
+
+.dark-link-text {
+    color: #5865E0;
+}
+
+.site-subtitle {
+    color: #5865E0;
+}
+
+.toggleTheme {
+    padding-right: 4rem;
+}
+
+.filter-wrap {
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+}
+
+.filter-container {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin-bottom: -2rem;
+    border-radius: .25rem;
+}
+
+.filter-container-dark {
+    background-color: #19212D !important;
+}
+
+.filter-fulltime {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.go-back {
+    width: 20px !important;
+    margin-right: .625rem;
+    cursor: pointer;
+}
+
+.job-header {
+    display: flex;
+    width: 70%;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin-bottom: -2rem;
+    border-radius: .25rem;
+}
+
+.company-logo {
+    height: 100%;
+    width: 15%;
+}
+
+.company-site {
+    width: 85%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-title {
+    width: 45%;
+
+    @include breakpoint(800px) {
+        width: 60%;
+    }
+
+    @include breakpoint(1057px) {
+        width: 80%;
+    }
+}
+
+.site-title {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.site-subtitle {
+    font-size: 12px;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-btn {
+    padding: .625rem;
+    background-color: #bac1fb;
+    color: #3d4cd1;
+    font-weight: bold;
+    font-size: 14px;
+    border: 0;
+    border-radius: .25rem;
+}
+
+.apply-btn {
+    padding: .625rem;
+    background-color: #5865E0;
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+    border: 0;
+    border-radius: .25rem; 
+}
+
+.apply-link {
+    color:white;
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    a {
+        color:white; 
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+.job-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.job-cards-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.job-cards {
+    width: 80%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+    padding-bottom: 1rem;
+}
+
+.light-card {
+    background-color: #FFFFFF;
+}
+
+.dark-card {
+    background-color: #19212D !important;
+}
+
+.job-body {
+    cursor: pointer;
+}
+
+.loadmore-wrap {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.filter-field-search {
+    padding: .5rem 1.875rem 1.875rem;
+}
+
+.filter-field-location {
+    display: none !important;
+
+    @include breakpoint(1082px) {
+        padding: .5rem 1.875rem 1.875rem;
+        display: inline-flex !important;
+    }
+}
+
+.location-divider {
+    display: none !important;
+
+    @include breakpoint(1082px) {
+        display: block !important;
+    }
+}
+
+.MuiFormControlLabel-root {
+    margin-left: 1rem !important;
+    padding-top: .5rem;
+}
+.MuiTypography-body1, .MuiButton-label {
+    font-size: 14px !important;
+}
+
+button.MuiButton-root {
+    margin-right: .5rem;
+    margin-left: .5rem;
+}
+
+.MuiButton-label {
+    font-size: 12px !important;
+
+    @include breakpoint(1082px) {
+        font-size: 14px !important;
+    }
+}
+
+.MuiSvgIcon-root {
+    height: .8em !important;
+}
+.theme-icon{
+    fill: #FFFFFF !important;
+}
+.MuiInputLabel-animated {
+    color: #5865E0 !important;
+    font-size: 12px !important;
+}
+
+.job-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 4rem;
+}
+
+.how-to-apply {
+    color: white;
+    background-color: #5865E0 !important;
+}
+
+.fulltime-checkbox {
+    .MuiSvgIcon-root, .MuiTypography-body1 {
+        fill: white;
+        color: white;
+    }
+}
+
+.MuiFormControlLabel-root {
+    display: none !important;
+
+    @include breakpoint(800px) {
+        display: inline-flex !important;
+    }
+}
